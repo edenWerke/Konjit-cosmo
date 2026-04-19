@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #fff5fa 0%, #fffafd 40%, #ffffff 100%);
+  color: #4a2c3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes slideInHero {
+  0% {
+    opacity: 0;
+    transform: translateX(-48px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-slide {
+  animation: slideInHero 3s ease-out;
+}
